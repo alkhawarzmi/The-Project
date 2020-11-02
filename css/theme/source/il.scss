@@ -20,6 +20,7 @@ $backgroundColor: #00675b;
 
 $mainColor: #fff;
 $headingColor: #fff;
+$headingColorDark: #00675b;
 
 $mainFontSize: 42px;
 $mainFont: 'Roboto', Helvetica, sans-serif;
@@ -27,7 +28,7 @@ $headingFont: 'Roboto', Helvetica, sans-serif;
 $headingTextShadow: none;
 $headingLetterSpacing: normal;
 $headingTextTransform: uppercase;
-$headingFontWeight: 600;
+$headingFontWeight: 700;
 $linkColor: #52c7b8;
 $linkColorHover: lighten( $linkColor, 15% );
 $selectionBackgroundColor: lighten( $linkColor, 25% );
@@ -43,4 +44,5 @@ $heading4Size: 1.0em;
 
 // Theme template ------------------------------
 @import "../template/theme";
+@import "../template/il-custom";
 // ---------------------------------------------

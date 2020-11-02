@@ -23,7 +23,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
   --heading-letter-spacing: normal;
   --heading-text-transform: uppercase;
   --heading-text-shadow: none;
-  --heading-font-weight: 600;
+  --heading-font-weight: 700;
   --heading1-text-shadow: none;
   --heading1-size: 2.5em;
   --heading2-size: 1.6em;
@@ -72,7 +72,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
   margin: 0 0 20px 0;
   color: #fff;
   font-family: "Roboto", Helvetica, sans-serif;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.2;
   letter-spacing: normal;
   text-transform: uppercase;
@@ -292,3 +292,54 @@ section.has-light-background, section.has-light-background h1, section.has-light
 @media print {
   .backgrounds {
     background-color: #00675b; } }
+
+/*********************************************
+ * BACKGROUND COLORS
+ *********************************************/
+.bg-primary {
+  background-color: rgba(0, 103, 91, 0.8); }
+
+.bg-inverse {
+  background-color: rgba(178, 230, 224, 0.8); }
+
+.bg-dark {
+  background-color: rgba(0, 0, 0, 0.8); }
+
+/*********************************************
+ * HEADERS
+ *********************************************/
+.reveal h1.dark,
+.reveal h2.dark,
+.reveal h3.dark,
+.reveal h4.dark,
+.reveal h5.dark,
+.reveal h6.dark {
+  color: #00675b; }
+
+/*********************************************
+ * Cards and Helpers
+ *********************************************/
+.push-right {
+  right: 0;
+  top: 20%;
+  left: auto;
+  position: absolute !important; }
+
+.push-left {
+  right: auto;
+  top: 20%;
+  left: 0;
+  position: absolute !important; }
+
+.card {
+  position: relative;
+  margin: .5rem 0 1rem 0;
+  -webkit-transition: -webkit-box-shadow .25s;
+  transition: -webkit-box-shadow .25s;
+  transition: box-shadow .25s;
+  transition: box-shadow .25s, -webkit-box-shadow .25s;
+  border-radius: 2px;
+  padding: 20px 10px; }
+
+.w-40 {
+  max-width: 40%; }
