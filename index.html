@@ -30,29 +30,29 @@
 				</section>
 
 				<section data-auto-animate data-autoslide="3000" data-background-image="https://cms.qz.com/wp-content/uploads/2019/10/RTS2S4IP-e1571668240421.jpg?quality=75&strip=all&w=1600&h=900&crop=1">
-					<div class="card bg-primary" data-transition="zoom">
+					<div id="box" class="card bg-primary" data-transition="zoom">
 						<h4 class="card">Thank you for taking the survey!</h4>
 					</div>	
 				</section>
 
 				<section>
 					<section data-auto-animate data-background-image="https://imaginelebanon.com/themes/material_base/img/header-bg.jpg">
-						<div class="card bg-dark"  data-transition="zoom">
+						<div id="box" class="card bg-dark"  data-transition="zoom">
 							<h2 data-autoslide="2000">One Year Later, <span data-autoslide="3000" class="fragment fade-in-then-out" data-transition="fade">Facts</span></h2>
 						</div>
 					</section>
 					<section data-auto-animate data-auto-animate data-autoslide="3000" data-background-image="https://media.newyorker.com/photos/5db733c7ee119e0008431f71/4:3/w_2219,h_1664,c_limit/Sullivan-Beirut.jpg">
-						<div class="card bg-primary" data-transition="zoom">
+						<div  id="box" class="card bg-primary" data-transition="zoom">
 							<p>We are Lebanese <em>Citizens</em>, not Politicians!</p>
 						</div>
 					</section>
 					<section data-auto-animate data-auto-animate data-autoslide="3000" data-background-image="https://media.newyorker.com/photos/5db733c7ee119e0008431f71/4:3/w_2219,h_1664,c_limit/Sullivan-Beirut.jpg">
-						<div class="card bg-primary" data-transition="zoom">
+						<div  id="box" class="card bg-primary" data-transition="zoom">
 							<p>It was never a <em>Sprint</em>. It was always a <em>Marathon</em></p>
 						</div>
 					</section>
 					<section data-auto-animate data-autoslide="5000"  data-background-image="https://vid.alarabiya.net/images/2020/03/28/0e14f515-ec45-41aa-af7f-a61d78126846/0e14f515-ec45-41aa-af7f-a61d78126846.jpg">
-						<div class="card bg-primary w-40 push-right" data-transition="zoom">
+						<div  id="box" class="card bg-primary w-40 push-right" data-transition="zoom">
 							<p><em>"Political Parties, Politicians and Groups"</em> of the Revolution did not attract people to rally behind them to form the "Serious Political Alternative" we are all looking for...</p>
 						</div>
 					</section>
@@ -201,20 +201,6 @@
 						</div>
 					</section>
 
-					<!-- <section>
-						<h4 data-autoslide="3000">Solution? Let us get to know them</h4>
-						<p class="fragment fade-in-then-out" data-transition="zoom"  data-autoslide="3000">A collaborative Database of all Political Actors</p>
-						<p class="fragment fade-in-then-out" data-transition="zoom"  data-autoslide="4500">Political Parties, Emerging Political Parties, Revolutionary Cells, Alternative Media, People, Coalitions, Alliances, Political Fronts, etc</p>
-						<p class="fragment fade-in-then-out" data-transition="zoom"  data-autoslide="3000">Interview with all of them</p>
-					</section> -->
-
-					<!-- <section>
-						<h4 data-autoslide="3000">Results/Outcomes?</h4>
-						<p class="fragment fade-in-then-out" data-transition="zoom"  data-autoslide="3000">Interviews with Political Parties and People</p>
-						<p class="fragment fade-in-then-out" data-transition="zoom"  data-autoslide="4500">Organization and People Profiles with full information and matching percentage with our Vision</p>
-						<p class="fragment fade-in-then-out" data-transition="zoom"  data-autoslide="3000">Community Polls results post interviews</p>
-					</section> -->
-
 					<section data-background-image="https://www.mioromag.com/wp-content/uploads/2020/06/Silence_is_violence_15394765154-scaled-e1591203392871-1160x653.jpg">
 						<div class="card bg-primary" data-transition="zoom"><h4 data-autoslide="3000" data-transition="zoom">How do we get there? What is the PLAN?</h4></div>
 						<div class="card bg-primary" data-transition="zoom">
@@ -311,6 +297,9 @@
 				autoSlide: 5000,
   				loop: false,
 
+  				autoAnimateEasing: 'ease-out',
+  autoAnimateDuration: 0.8,
+  autoAnimateUnmatched: false,
   				// Help the user learn the controls by providing hints, for example by
 			  	// bouncing the down arrow when they first encounter a vertical slide
 				  controlsTutorial: true,
