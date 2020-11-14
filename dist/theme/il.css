@@ -385,15 +385,51 @@ table tr td {
  */
 @-webkit-keyframes color-change-2x {
   0% {
-    background: #19dcea; }
+    background: #52c7b8; }
+  10% {
+    background: #003c32; }
+  20% {
+    background: #00675b; }
+  30% {
+    background: #52c7b8; }
+  40% {
+    background: #003c32; }
+  50% {
+    background: #00675b; }
+  60% {
+    background: #52c7b8; }
+  70% {
+    background: #003c32; }
+  80% {
+    background: #00675b; }
+  90% {
+    background: #52c7b8; }
   100% {
-    background: #b22cff; } }
+    background: #003c32; } }
 
 @keyframes color-change-2x {
   0% {
-    background: #19dcea; }
+    background: #52c7b8; }
+  10% {
+    background: #003c32; }
+  20% {
+    background: #00675b; }
+  30% {
+    background: #52c7b8; }
+  40% {
+    background: #003c32; }
+  50% {
+    background: #00675b; }
+  60% {
+    background: #52c7b8; }
+  70% {
+    background: #003c32; }
+  80% {
+    background: #00675b; }
+  90% {
+    background: #52c7b8; }
   100% {
-    background: #b22cff; } }
+    background: #003c32; } }
 
 .color-change-2x {
   -webkit-animation: color-change-2x 2s linear infinite alternate both;
