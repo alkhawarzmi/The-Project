@@ -576,88 +576,80 @@ table tr td {
   animation: scale-in-hor-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
 
 /* ---- Timeline ---- */
-ol {
-  position: relative;
-  display: block;
-  margin: 100px;
-  height: 4px;
-  background: #fff; }
-
-ol::before,
-ol::after {
-  content: "";
-  position: absolute;
-  top: -8px;
-  display: block;
-  width: 0;
-  height: 0;
-  border-radius: 10px;
-  border: 10px solid #fff; }
-
-ol::before {
-  left: -5px; }
-
-ol::after {
-  right: -10px;
-  border: 10px solid transparent;
-  border-right: 0;
-  border-left: 20px solid #fff;
-  border-radius: 3px; }
-
-/* ---- Timeline elements ---- */
-li {
-  position: relative;
-  display: inline-block;
-  float: left;
-  width: 150px;
-  height: 50px;
-  font-size: 10px; }
-
-li .event {
-  position: absolute;
-  top: -60px;
-  left: 36%;
-  color: #fff; }
-
-li .point {
-  content: "";
-  top: -4px;
-  left: 43%;
-  display: block;
-  width: 6px;
-  height: 6px;
-  border: 4px solid #fff;
-  border-radius: 10px;
-  background: #fff;
-  position: absolute; }
-
-li .description {
-  display: block;
-  background-color: #f4f4f4;
-  padding: 10px;
-  margin-top: 20px;
-  position: relative;
-  font-weight: normal;
-  z-index: 1; }
-
-.description::before {
-  content: '';
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-bottom: 5px solid #f4f4f4;
-  position: absolute;
-  top: -5px;
-  left: 43%; }
-
-/* ---- Hover effects ---- */
-li:hover {
-  cursor: pointer;
-  color: #48A4D2; }
-
-li:hover .description {
-  display: block; }
+.timeline {
+  /* ---- Timeline elements ---- */
+  /* ---- Hover effects ---- */ }
+  .timeline ol {
+    position: relative;
+    display: block;
+    margin: 20px;
+    height: 4px;
+    background: #fff; }
+  .timeline ol::before,
+  .timeline ol::after {
+    content: "";
+    position: absolute;
+    top: -8px;
+    display: block;
+    width: 0;
+    height: 0;
+    border-radius: 10px;
+    border: 10px solid #fff; }
+  .timeline ol::before {
+    left: -5px; }
+  .timeline ol::after {
+    right: -10px;
+    border: 10px solid transparent;
+    border-right: 0;
+    border-left: 20px solid #fff;
+    border-radius: 3px; }
+  .timeline li {
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 150px;
+    height: 50px;
+    font-size: 10px; }
+  .timeline li .event {
+    position: absolute;
+    top: -70px;
+    left: 36%;
+    color: #fff;
+    font-size: 12px; }
+  .timeline li .point {
+    content: "";
+    top: -4px;
+    left: 43%;
+    display: block;
+    width: 6px;
+    height: 6px;
+    border: 4px solid #fff;
+    border-radius: 10px;
+    background: #fff;
+    position: absolute; }
+  .timeline li .description {
+    display: block;
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin-top: 20px;
+    position: relative;
+    font-weight: normal;
+    z-index: 1; }
+  .timeline .description::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #f4f4f4;
+    position: absolute;
+    top: -5px;
+    left: 43%; }
+  .timeline li:hover {
+    cursor: pointer;
+    color: #48A4D2; }
+  .timeline li:hover .description {
+    display: block; }
 
 .bgtext {
   opacity: 0.4;
