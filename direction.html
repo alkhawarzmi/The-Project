@@ -20,8 +20,8 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section data-auto-animate data-autoslide="20000">
-					<a href="#/1">Click here to Start</a>
+				<section data-auto-animate>
+					<button class="navigate-next">Start</button>
 				</section>
 				<section data-auto-animate data-autoslide="500" class="color-change-2x">
 				</section>
@@ -35,7 +35,7 @@
 				</section>
 				<section data-auto-animate data-autoslide="300" data-background-image="https://static.timesofisrael.com/www/uploads/2019/10/000_1LL3RJ-e1571596008689.jpg">
 				</section>
-				<section data-auto-animate data-autoslide="5000" data-background-video="assets/17october.mp4">
+				<section data-auto-animate data-autoslide="5000"  data-background-image="https://static.timesofisrael.com/www/uploads/2019/10/000_1LL3RJ-e1571596008689.jpg">
 					<div id="box" class="card bg-primary" data-transition="fade-in-then-out">
 						<h3>Project: New Lebanon</h3>
 						<h5><em>What is Project: New Lebanon?</em></h5>
@@ -51,9 +51,8 @@
 				<section data-auto-animate>
 					<section data-auto-animate data-background-image="https://english.alahednews.com.lb/uploaded2/images/20191026122935.jpg">
 						<div id="box" class="card bg-primary">
-							<h4 style="display: block;" data-autoslide="2000">Why am I hopeful?</h4>
-							<h4 style="display: none;" data-autoslide="2000">Roadmap to Change</h4>
 							<div class="r-stack">
+							<h4 class="fragment fade-in-then-out" data-fragment-index="0" data-autoslide="2000">Why am I hopeful?</h4>
 							<p class="fragment fade-in-then-out" data-fragment-index="1" data-transition="fade-in-then-out" data-autoslide="2000">The first thing I thought when it all started was...</p>
 							<p class="fragment fade-in-then-out" data-fragment-index="2" data-transition="fade-in-then-out" data-autoslide="2000">I can dream again!</p>
 							<p class="fragment fade-in-then-out" data-fragment-index="3" data-transition="fade-in-then-out" data-autoslide="2000">For over a year now, I have been involved.</p>
@@ -80,13 +79,10 @@
 					</section>
 				</section>					
 
-				<!-- Who are we fighting? -->
 				<section data-auto-animate>
-					
+					<button class="navigate-next">Continue</button>
 				</section>
 				<!-- Start Roadmap to Change -->
-
-
 				<section data-auto-animate data-autoslide="5000">
 					<h4 class="fragment fade-left" data-fragment-index="0" data-autoslide="2000">Roadmap to Change</h4>
 						<table border="0" class="timeline">
@@ -418,7 +414,6 @@
 					<h5 data-autoslide="2000" class="fade-in-then-out shrink" style="display: none;" data-transition="fade-in-then-out shrink">What are the different projects? (1/2)</h5>
 				</section>
 
-
 				<section data-auto-animate>
 					<h5 data-autoslide="2000" class="fade-in-then-out shrink" style="display: block;" data-transition="fade-in-then-out shrink">What are the different projects? (1/2)</h5>
 					<h5 data-autoslide="2000" class="fade-in-then-out shrink" style="display: none;" data-transition="fade-in-then-out shrink">What are the different projects? (2/2)</h5>
@@ -550,8 +545,6 @@
 						
 					</div>
 				</section>
-
-
 			</div>
 		</div>
 
@@ -564,10 +557,10 @@
 			// - https://revealjs.com/initialization/
 			// - https://revealjs.com/config/
 			Reveal.initialize({
+				controls: true,
 				hash: true,
 				center: true,
-				autoSlide: 2000,
-  				loop: false,
+  				autoPlayMedia: true,
 
   				// Help the user learn the controls by providing hints, for example by
 			  	// bouncing the down arrow when they first encounter a vertical slide
