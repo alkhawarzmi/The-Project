@@ -652,10 +652,13 @@ table tr td {
     display: block; }
 
 .bgtext {
-  opacity: 0.4;
+  opacity: 0.2;
   font-size: 30px;
   text-align: center;
   padding-bottom: 10px; }
+
+.r-stack p {
+  font-size: 28px; }
 
 /**
  * ----------------------------------------
